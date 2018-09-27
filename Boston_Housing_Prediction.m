@@ -52,7 +52,7 @@ MSE = SSE / (n - p);
 
 % Test for significance using F0 at a 95% confidence
 F0 = MSR/MSE;
-f_value = icdf('f', 1-0.05, 1, 2);
+f_value = icdf('f', 1-0.05, k, n - p);
 if F0 > f_value
     fprintf('Regression is significant \n');
 else
