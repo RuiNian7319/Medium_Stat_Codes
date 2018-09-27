@@ -1,3 +1,6 @@
+% Clear previous variables
+clear; clc;
+
 % Load all the Boston housing data
 data = xlsread('train.xls');
 
