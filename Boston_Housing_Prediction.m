@@ -14,8 +14,7 @@ labels = data(:, 1);
 
 % Add the intercept vector
 
-features = data(:, 2:end);
-theta_0 = ones(size(features, 1), 1); 
+theta_0 = ones(size(data, 1), 1); 
 features = [theta_0, data(:, 2:end)];   % Added theta_0 to features to obtain the intercept
 
 
